@@ -1,0 +1,17 @@
+C:\Users\david\OneDrive\Documentos\pruebaTecnicaAmaris\ELCLIENTE\ElCliente.DAL\bin\Release\net8.0\ElCliente.DAL.deps.json
+C:\Users\david\OneDrive\Documentos\pruebaTecnicaAmaris\ELCLIENTE\ElCliente.DAL\bin\Release\net8.0\ElCliente.DAL.runtimeconfig.json
+C:\Users\david\OneDrive\Documentos\pruebaTecnicaAmaris\ELCLIENTE\ElCliente.DAL\bin\Release\net8.0\ElCliente.DAL.dll
+C:\Users\david\OneDrive\Documentos\pruebaTecnicaAmaris\ELCLIENTE\ElCliente.DAL\bin\Release\net8.0\ElCliente.DAL.pdb
+C:\Users\david\OneDrive\Documentos\pruebaTecnicaAmaris\ELCLIENTE\ElCliente.DAL\bin\Release\net8.0\ElCliente.Modelos.dll
+C:\Users\david\OneDrive\Documentos\pruebaTecnicaAmaris\ELCLIENTE\ElCliente.DAL\bin\Release\net8.0\ElCliente.Modelos.pdb
+C:\Users\david\OneDrive\Documentos\pruebaTecnicaAmaris\ELCLIENTE\ElCliente.DAL\obj\Release\net8.0\ElCliente.DAL.csproj.AssemblyReference.cache
+C:\Users\david\OneDrive\Documentos\pruebaTecnicaAmaris\ELCLIENTE\ElCliente.DAL\obj\Release\net8.0\ElCliente.DAL.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\david\OneDrive\Documentos\pruebaTecnicaAmaris\ELCLIENTE\ElCliente.DAL\obj\Release\net8.0\ElCliente.DAL.AssemblyInfoInputs.cache
+C:\Users\david\OneDrive\Documentos\pruebaTecnicaAmaris\ELCLIENTE\ElCliente.DAL\obj\Release\net8.0\ElCliente.DAL.AssemblyInfo.cs
+C:\Users\david\OneDrive\Documentos\pruebaTecnicaAmaris\ELCLIENTE\ElCliente.DAL\obj\Release\net8.0\ElCliente.DAL.csproj.CoreCompileInputs.cache
+C:\Users\david\OneDrive\Documentos\pruebaTecnicaAmaris\ELCLIENTE\ElCliente.DAL\obj\Release\net8.0\ElClient.19727E54.Up2Date
+C:\Users\david\OneDrive\Documentos\pruebaTecnicaAmaris\ELCLIENTE\ElCliente.DAL\obj\Release\net8.0\ElCliente.DAL.dll
+C:\Users\david\OneDrive\Documentos\pruebaTecnicaAmaris\ELCLIENTE\ElCliente.DAL\obj\Release\net8.0\refint\ElCliente.DAL.dll
+C:\Users\david\OneDrive\Documentos\pruebaTecnicaAmaris\ELCLIENTE\ElCliente.DAL\obj\Release\net8.0\ElCliente.DAL.pdb
+C:\Users\david\OneDrive\Documentos\pruebaTecnicaAmaris\ELCLIENTE\ElCliente.DAL\obj\Release\net8.0\ElCliente.DAL.genruntimeconfig.cache
+C:\Users\david\OneDrive\Documentos\pruebaTecnicaAmaris\ELCLIENTE\ElCliente.DAL\obj\Release\net8.0\ref\ElCliente.DAL.dll

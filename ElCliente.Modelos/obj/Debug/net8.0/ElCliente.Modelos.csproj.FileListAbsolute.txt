@@ -1,0 +1,11 @@
+C:\Users\david\OneDrive\Documentos\pruebaTecnicaAmaris\ELCLIENTE\ElCliente.Modelos\bin\Debug\net8.0\ElCliente.Modelos.deps.json
+C:\Users\david\OneDrive\Documentos\pruebaTecnicaAmaris\ELCLIENTE\ElCliente.Modelos\bin\Debug\net8.0\ElCliente.Modelos.dll
+C:\Users\david\OneDrive\Documentos\pruebaTecnicaAmaris\ELCLIENTE\ElCliente.Modelos\bin\Debug\net8.0\ElCliente.Modelos.pdb
+C:\Users\david\OneDrive\Documentos\pruebaTecnicaAmaris\ELCLIENTE\ElCliente.Modelos\obj\Debug\net8.0\ElCliente.Modelos.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\david\OneDrive\Documentos\pruebaTecnicaAmaris\ELCLIENTE\ElCliente.Modelos\obj\Debug\net8.0\ElCliente.Modelos.AssemblyInfoInputs.cache
+C:\Users\david\OneDrive\Documentos\pruebaTecnicaAmaris\ELCLIENTE\ElCliente.Modelos\obj\Debug\net8.0\ElCliente.Modelos.AssemblyInfo.cs
+C:\Users\david\OneDrive\Documentos\pruebaTecnicaAmaris\ELCLIENTE\ElCliente.Modelos\obj\Debug\net8.0\ElCliente.Modelos.csproj.CoreCompileInputs.cache
+C:\Users\david\OneDrive\Documentos\pruebaTecnicaAmaris\ELCLIENTE\ElCliente.Modelos\obj\Debug\net8.0\ElCliente.Modelos.dll
+C:\Users\david\OneDrive\Documentos\pruebaTecnicaAmaris\ELCLIENTE\ElCliente.Modelos\obj\Debug\net8.0\refint\ElCliente.Modelos.dll
+C:\Users\david\OneDrive\Documentos\pruebaTecnicaAmaris\ELCLIENTE\ElCliente.Modelos\obj\Debug\net8.0\ElCliente.Modelos.pdb
+C:\Users\david\OneDrive\Documentos\pruebaTecnicaAmaris\ELCLIENTE\ElCliente.Modelos\obj\Debug\net8.0\ref\ElCliente.Modelos.dll
