@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using ElCliente.BLL.Integraciones.servicios.contrato;
+
 using ElCliente.BLL.Servicios.Contrato;
 using ElCliente.DAL.DBContext;
 using ElCliente.DAL.Repositorios.Contrato;
@@ -18,15 +18,15 @@ namespace ElCliente.BLL.Servicios
         private readonly IRepositorioGenerico<Cliente> _clienteRepositorio;
         private readonly IRepositorioGenerico<TransaccionInscripcion> _transaccioneRepositorio;
         private readonly IRepositorioGenerico<Producto> _productoRepositorio;
-        private readonly IServicioMensajeria _mensajeria;
+        //private readonly IServicioMensajeria _mensajeria;
         public ClienteService(IRepositorioGenerico<Cliente> clienteRepositorio, IRepositorioGenerico<Producto> productoRepositorio,
             IRepositorioGenerico<TransaccionInscripcion> transaccioneRepositorio
-            , IServicioMensajeria mensajeria)
+           )
         {
             _clienteRepositorio = clienteRepositorio;
             _productoRepositorio = productoRepositorio;
              _transaccioneRepositorio = transaccioneRepositorio;
-            _mensajeria = mensajeria;
+            //_mensajeria = mensajeria;
 
         }
 
@@ -73,7 +73,22 @@ namespace ElCliente.BLL.Servicios
 
         public Task<bool> Eliminar(int id)
         {
-            throw new NotImplementedException();
+            try
+            {
+                var clienteEliminado = _clienteRepositorio.Eliminar(id);
+
+                if (clienteEliminado.Id == 0)
+                {
+                    throw new TaskCanceledException("No se pudo eliminar el producto");
+                }
+
+                return clienteEliminado;
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
         }
 
         public async Task<List<Cliente>> Lista()
@@ -116,7 +131,7 @@ namespace ElCliente.BLL.Servicios
 
                 TransaccionInscripcion tr = new TransaccionInscripcion()
                 {
-                    Tr_IdCliente = cliente.Id,
+                    Tr_IdCliente = (int)cliente.Id,
                     Tr_IdProducto = producto.Id,
                     Accion = "Desvinculado",
                     Fecha = DateTime.Now 
@@ -200,7 +215,7 @@ namespace ElCliente.BLL.Servicios
 
                 TransaccionInscripcion tr = new TransaccionInscripcion()
                 {
-                    Tr_IdCliente = clienteConProductos.Id,
+                    Tr_IdCliente = (int)clienteConProductos.Id,
                     Tr_IdProducto = producto.Id,
                     Accion = "Vinculado", // "Insertar" porque está agregando
                     Fecha = DateTime.Now // Si no tienes default en DB

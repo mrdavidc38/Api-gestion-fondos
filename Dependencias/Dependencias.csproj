@@ -14,6 +14,7 @@
   <ItemGroup>
     <ProjectReference Include="..\ElCliente.BLL\ElCliente.BLL.csproj" />
     <ProjectReference Include="..\ElCliente.DAL\ElCliente.DAL.csproj" />
+    <ProjectReference Include="..\utilidades\utilidades.csproj" />
   </ItemGroup>
 
 </Project>

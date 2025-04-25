@@ -85,18 +85,43 @@ namespace ElCliente.DAL.Repositorios
             }
         }
 
-        public async Task<bool> Eliminar(TModel modelo)
+        //public async Task<bool> Eliminar(TModel modelo)
+        //{
+        //    try
+        //    {
+        //        _dbclienteContext.Set<TModel>().Remove(modelo);
+        //        await _dbclienteContext.SaveChangesAsync();
+        //        return true;
+        //    }
+        //    catch (Exception)
+        //    {
+
+        //        throw;
+        //    }
+        //}
+
+        public async Task<bool> Eliminar(int id)
         {
             try
             {
+                // Buscar el modelo por su ID
+                var modelo = await _dbclienteContext.Set<TModel>().FindAsync(id);
+
+                if (modelo == null)
+                {
+                    return false; // No se encontró el registro
+                }
+
+                // Eliminar el modelo encontrado
                 _dbclienteContext.Set<TModel>().Remove(modelo);
                 await _dbclienteContext.SaveChangesAsync();
                 return true;
             }
-            catch (Exception)
+            catch (Exception ex)
             {
-
-                throw;
+                // Considera registrar el error (logging)
+                // _logger.LogError(ex, "Error al eliminar el registro con ID {Id}", id);
+                throw; // Re-lanzar la excepción
             }
         }
 

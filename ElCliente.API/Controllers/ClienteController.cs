@@ -1,7 +1,9 @@
-﻿using ElCliente.API.General;
+﻿using AutoMapper;
+using ElCliente.API.General;
 using ElCliente.BLL.Servicios.Contrato;
 using ElCliente.DAL.DBContext;
 using ElCliente.Modelos.modelos;
+using ElCliente.Modelos.modelos.DTO;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
@@ -12,10 +14,11 @@ namespace ElCliente.API.Controllers
     public class ClienteController : ControllerBase
     {
         private readonly ICliente _clienteService;
-
-        public ClienteController(ICliente clienteService)
+        private readonly IMapper _mapper;
+        public ClienteController(ICliente clienteService, IMapper mapper)
         {
             _clienteService = clienteService;
+            _mapper = mapper;
         }
 
         [HttpGet]
@@ -65,14 +68,15 @@ namespace ElCliente.API.Controllers
 
         [HttpPost]
         [Route("crear")]
-        public async Task<IActionResult> crear([FromBody] Cliente cliente )
+        public async Task<IActionResult> crear([FromBody] ClienteDTO cliente )
         {
 
             var rsp = new Respuesta<Cliente>();
             try
             {
                 rsp.status = true;
-                rsp.value = await _clienteService.crear(cliente);
+                var clientex= _mapper.Map<Cliente>(cliente);
+                rsp.value = await _clienteService.crear(clientex);
 
 
             }
@@ -88,14 +92,15 @@ namespace ElCliente.API.Controllers
 
         [HttpPost]
         [Route("vincular")]
-        public async Task<IActionResult> vinculacion([FromBody] Cliente modelo)
+        public async Task<IActionResult> vinculacion([FromBody] ClienteProductoDTO cliente)
         {
 
             var rsp = new Respuesta<Cliente>();
             try
             {
                 rsp.status = true;
-                rsp.value = await _clienteService.VinculacionFondo(modelo);
+                var clienteProd = _mapper.Map<Cliente>(cliente);
+                rsp.value = await _clienteService.VinculacionFondo(clienteProd);
 
 
             }
@@ -112,14 +117,39 @@ namespace ElCliente.API.Controllers
 
         [HttpPost]
         [Route("desvinvcular")]
-        public async Task<IActionResult> Desvinculacion([FromBody] Cliente modelo)
+        public async Task<IActionResult> Desvinculacion([FromBody] ClienteProductoDTO cliente)
         {
 
             var rsp = new Respuesta<Cliente>();
             try
             {
                 rsp.status = true;
-                rsp.value = await _clienteService.SalirFondo(modelo);
+                var clienteProd = _mapper.Map<Cliente>(cliente);
+                rsp.value = await _clienteService.SalirFondo(clienteProd);
+
+
+            }
+            catch (Exception ex)
+            {
+                rsp.status = false;
+                rsp.msg = ex.Message;
+
+            }
+
+            return Ok(rsp);
+        }
+
+        [HttpPost]
+        [Route("eliminar")]
+        public async Task<IActionResult> aliminar([FromBody]int id)
+        {
+
+            var rsp = new Respuesta<bool>();
+            try
+            {
+                rsp.status = true;
+                //var clientex = _mapper.Map<Cliente>(cliente);
+                rsp.value = await _clienteService.Eliminar(id);
 
 
             }

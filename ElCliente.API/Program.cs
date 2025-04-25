@@ -2,7 +2,7 @@ using System.Text.Json.Serialization;
 using Dependencias;
 
 var builder = WebApplication.CreateBuilder(args);
-builder.WebHost.UseUrls("http://0.0.0.0:5000");
+//builder.WebHost.UseUrls("http://0.0.0.0:5000");
 // Add services to the container.
 
 builder.Services.AddControllers();
