@@ -32,11 +32,11 @@ jobs:
 
       # Paso 4: Compilar en modo Release
       - name: Build
-        run: dotnet build cliente.API/cliente.API.csproj --configuration Release --no-restore
+        run: dotnet build ElCliente.API/ElCliente.API.csproj --configuration Release --no-restore
 
       # Paso 5: Publicar la aplicación
       - name: Publish
-        run: dotnet publish cliente.API/cliente.API.csproj -c Release -o ${{ github.workspace }}/${{ env.PUBLISH_OUTPUT }}
+        run: dotnet publish ElCliente.API/ElCliente.API.csproj -c Release -o ${{ github.workspace }}/${{ env.PUBLISH_OUTPUT }}
 
       # Paso 6: Desplegar en Azure
       - name: Deploy to Azure Web App
