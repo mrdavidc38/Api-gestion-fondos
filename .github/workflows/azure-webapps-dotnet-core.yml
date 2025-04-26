@@ -1,7 +1,7 @@
 name: Deploy ASP.NET Core to Azure Web App
 
 env:
-  AZURE_WEBAPP_NAME: frontfondos      # Nombre exacto de tu Web App en Azure
+  AZURE_WEBAPP_NAME: ApiGestionFondos      # Nombre exacto de tu Web App en Azure
   DOTNET_VERSION: '8.0'               # Versión de .NET (coincide con tu runtime stack)
   PUBLISH_OUTPUT: 'publish'           # Carpeta donde se guardarán los archivos publicados
 
