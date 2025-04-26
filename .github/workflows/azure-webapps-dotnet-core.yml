@@ -28,7 +28,7 @@ jobs:
 
       # Paso 3: Restaurar dependencias
       - name: Restore dependencies
-        run: dotnet restore cliente.API/cliente.API.csproj
+        run: dotnet restore ElCliente.API/ElCliente.API.csproj
 
       # Paso 4: Compilar en modo Release
       - name: Build
